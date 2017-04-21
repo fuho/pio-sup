@@ -52,6 +52,8 @@ void loop(){              // All your programs will have an execution loop
 Check if it compiles with `pio run` or compile and upload with `pio run --target upload`.
 You should now see the blue LED flash on and off every 1 second.
 
+To see the serial data sent from the board run `screen /dev/$(ls /dev | grep "tty.*usb.*serial") 115200`. When you had enough kill screen with `Ctrl-ak, y`.
+
 ### Speed up upload times
 Open `platformio.ini` file and add one line specifying the uplaod speed:
 ```ini
