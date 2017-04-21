@@ -47,7 +47,6 @@ void loop(){              // All your programs will have an execution loop
   Serial.println("OFF");  // .. the current flows. When we pull it high (3.3V) ..
   delay(1000);            // .. both LED pins are at 3.3V hence no current flow.
 }
-}
 ```
 Check if it compiles with `pio run` or compile and upload with `pio run --target upload`.
 You should now see the blue LED flash on and off every 1 second.
